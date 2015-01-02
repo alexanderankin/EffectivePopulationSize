@@ -8,7 +8,7 @@ import java.util.Scanner;
 import java.util.List;
 
 public class logic {
-	public static final int NUMBEROFGENES = 3;
+	public static final int NUMBEROFGENES = 3; // must change in THIS file
 	public static int POPULTIONSIZE = 0; // get from file method
 
 	public static String[] genes = new String[NUMBEROFGENES];
@@ -25,8 +25,7 @@ public class logic {
 		for (int i = 0; s.hasNext(); i++) {
 			genes[i] = s.nextLine();
 		}
-		POPULTIONSIZE = (genes[0].length() / 3) + 1;
-
+		POPULTIONSIZE = (genes[0].length() / 3) + 1; //is 11
 		s.close();
 	}
 
